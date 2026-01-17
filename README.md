@@ -8,8 +8,8 @@ Speed up prompt processing (prefill) in LM Studio on Apple Silicon by increasing
 - Mac M3 Ultra (80-core GPU, 512GB RAM)
 - ~41k token prompt
 - LM Studio API
-- **V4:** GLM-4 9B 4-bit MLX quantization
-- **V5:** GLM-4 9B mixed 4/8-bit MLX quantization
+- **V4:** GLM-4.7 4-bit MLX quantization
+- **V5:** GLM-4.7 mixed 4/8-bit MLX quantization
 
 *Results may vary on different hardware configurations and models.*
 
