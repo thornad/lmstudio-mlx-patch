@@ -8,8 +8,10 @@ Speed up prompt processing (prefill) in LM Studio on Apple Silicon by increasing
 - Mac M3 Ultra (80-core GPU, 512GB RAM)
 - ~41k token prompt
 - LM Studio API
+- **V4:** GLM-4 9B 4-bit MLX quantization
+- **V5:** GLM-4 9B mixed 4/8-bit MLX quantization
 
-*Results may vary on different hardware configurations.*
+*Results may vary on different hardware configurations and models.*
 
 | Chunk Size | V4 Speed | V5 Speed | V4 Advantage |
 |------------|----------|----------|--------------|
@@ -23,7 +25,7 @@ Speed up prompt processing (prefill) in LM Studio on Apple Silicon by increasing
 
 - **Optimal setting: 4096** - best balance of speed and consistency
 - **4096 vs default 512: 2x faster** (129 vs 65 tok/s)
-- **V4 beats V5** at all chunk sizes for prefill
+- **V4 (4-bit) beats V5 (mixed 4/8-bit)** at all chunk sizes for prefill
 - Diminishing returns above 4096
 - 8192 has higher run-to-run variance
 
