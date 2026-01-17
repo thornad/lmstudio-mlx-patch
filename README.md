@@ -4,7 +4,12 @@ Speed up prompt processing (prefill) in LM Studio on Apple Silicon by increasing
 
 ## Results
 
-**Setup:** M-series Mac, ~41k token prompt, LM Studio API
+**Test Setup:**
+- Mac M3 Ultra (80-core GPU, 512GB RAM)
+- ~41k token prompt
+- LM Studio API
+
+*Results may vary on different hardware configurations.*
 
 | Chunk Size | V4 Speed | V5 Speed | V4 Advantage |
 |------------|----------|----------|--------------|
