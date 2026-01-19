@@ -62,7 +62,7 @@ python3 benchmark_api.py benchmark_40k.txt "model-name" 3
   benchmark_prefill.py --model /path/to/model --runs 3
 ```
 
-## What it patches
+## The patch
 
 The script modifies two files in each MLX backend:
 
@@ -74,7 +74,7 @@ Location:
 ~/.lmstudio/extensions/backends/vendor/_amphibian/*/lib/python3.11/site-packages/
 ```
 
-## Why it works
+## How it works
 
 The default chunk size of 512 processes prompts in small batches, requiring many iterations. Larger chunks (4096) reduce overhead and better utilize the GPU's parallel processing capabilities. However, very large chunks (8192+) can cause memory pressure and diminishing returns.
 
